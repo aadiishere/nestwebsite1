@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nest Digital</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .carousel-item {
+      position: relative;
+    }
+
+    .carousel-item::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 1;
+    }
+
+    .carousel-caption.center-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+    }
+
+    .carousel-caption h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+    }
+
+    .carousel-caption p {
+      font-size: 1.4rem;
+    }
+
+    .service-card {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .service-card .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover .card {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/nest.png" alt="Nest Digital" width="350" height="120">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link fw-semibold active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="services.html">Services</a></li>
+      </ul>
+
+      <a href="contactus.html" class="btn btn-dark">Contact Us</a>
+    </div>
+  </div>
+</nav>
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="images/office1.webp" class="d-block w-100">
+      <div class="carousel-caption center-caption">
+        <h1>Our Workspace</h1>
+        <p>Modern and collaborative environment</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/office2.jpg" class="d-block w-100">
+      <div class="carousel-caption center-caption">
+        <h1>Innovation Hub</h1>
+        <p>Where ideas turn into reality</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/office3.jpg" class="d-block w-100">
+      <div class="carousel-caption center-caption">
+        <h1>Team Culture</h1>
+        <p>Built on trust and creativity</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="images/office4.jpeg" class="d-block w-100">
+      <div class="carousel-caption center-caption">
+        <h1>Future Ready</h1>
+        <p>Designed for growth</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<section class="container my-5">
+  <h2 class="fw-bold text-center mb-4">Our Services</h2>
+
+  <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+
+  
+      <div class="carousel-item active">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-3">
+            <a href="angular.html" class="service-card">
+              <div class="card text-center">
+                <img src="images/angular.jfif" class="card-img-top">
+                <div class="card-body">
+                  <p class="fw-semibold">Web Development using Angular</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="python.html" class="service-card">
+              <div class="card text-center">
+                <img src="images/python.jfif" class="card-img-top">
+                <div class="card-body">
+                  <p class="fw-semibold">Data Science using Python</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-3">
+            <a href="cloud.html" class="service-card">
+              <div class="card text-center">
+                <img src="images/Cloud.svg" class="card-img-top">
+                <div class="card-body">
+                  <p class="fw-semibold">Cloud & DevOps Solutions</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-3">
+            <a href="ai.html" class="service-card">
+              <div class="card text-center">
+                <img src="images/ai.jfif" class="card-img-top">
+                <div class="card-body">
+                  <p class="fw-semibold">AI & Machine Learning</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="container my-5 text-center">
+  <h2 class="fw-bold mb-4">About Nest Digital</h2>
+  <p class="lead">
+    Nest Digital is a technology-driven organization focused on delivering innovative and reliable digital solutions for modern businesses.
+  </p>
+  <p>
+    With expertise across web development, data-driven technologies, and emerging platforms, we help organizations grow through digital excellence.
+  </p>
+</section>
+
+<footer class="bg-dark text-light mt-5">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>Nest Digital</h5>
+        <p class="small">Building future-ready digital solutions.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="aboutus.html" class="text-light text-decoration-none">About Us</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="contactus.html" class="text-light text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Contact</h5>
+        <p class="small mb-1">info@nestdigital.com</p>
+        <p class="small">Kochi, India</p>
+      </div>
+    </div>
+
+    <hr class="border-light">
+    <div class="text-center small">© 2025 Nest Digital</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
